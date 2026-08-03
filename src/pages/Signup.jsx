@@ -42,32 +42,30 @@ function Signup() {
                     </div>
                     <div>
                         <label className="block text-sm font-medium text-gray-600 mb-1.5">
-                            Password
-                        </label>
-                        <input
-                            type="password"
-                            placeholder="••••••••"
-                            required
-                            className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 text-sm focus:outline-none focus:border-gray-400 transition-colors"
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        className="w-full bg-gray-900 text-white py-2.5 rounded-xl text-sm font-medium hover:bg-gray-800 transition-colors"
+             Password
+             </label>
+             <input
+                 type="password"
+                 placeholder="••••••••"
+                 required
+                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 text-sm focus:outline-none focus:border-gray-400 transition-colors"
+               />
+         </div>
+         <button
+             type="submit"
+              className="w-full bg-gray-900 text-white py-2.5 rounded-xl text-sm font-medium hover:bg-gray-800 transition-colors"
                     >
-                        Create Account
+              Create Account
                     </button>
                 </form>
-
-                <p className="text-center text-sm text-gray-500 mt-5">
-                    Already have an account?{' '}
-                    <Link to="/login" className="text-gray-900 font-medium underline">
-                        Sign in
-                    </Link>
+  <p className="text-center text-sm text-gray-500 mt-5">
+   Already have an account?{' '}
+         <Link to="/login" className="text-gray-900 font-medium underline">
+        Sign in
+     </Link>
                 </p>
             </div>
         </div>
     );
 }
-
 export default Signup;
