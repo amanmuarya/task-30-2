@@ -11,8 +11,7 @@ src
 │   └── Signup.jsx
 
 
-Request
-readme_content = """# RouteFlow
+# RouteFlow
 
 A modern, interactive React application demonstrating **React Router DOM** with four main routes: Home, Dashboard, Login, and Signup. Built with clean architecture, smooth page transitions, and a polished UI.
 
@@ -25,35 +24,23 @@ A modern, interactive React application demonstrating **React Router DOM** with 
 - **Responsive Design**: Works beautifully on mobile, tablet, and desktop
 - **Accessible**: Respects `prefers-reduced-motion` for users with motion sensitivity
 - **Lucide Icons**: Clean, consistent iconography throughout
-##  Installation
-
-bash
-# Clone the repository
-git clone https://github.com/yourusername/routeflow.git
-cd routeflow
+##  Installatio
 
 # Install dependencies
 npm install
 
 # Start the development server
 npm run dev
-```
 
 The app will be available at `http://localhost:5173` (or your Vite default port).
 
-## 🎬 Animation System
+##  Animation System
 
 All animations are defined in `src/index.css` using pure CSS keyframes — no extra dependencies required.
 
 ### Micro-interactions
 
 ### Example Usage
-
-```jsx
-// Page wrapper
-<div className="animate-fade-in">
-  <h1>Welcome</h1>
-</div>
 
 // Staggered cards
 <div className="stagger-children grid grid-cols-3 gap-4">
@@ -62,21 +49,8 @@ All animations are defined in `src/index.css` using pure CSS keyframes — no ex
   <div className="hover-lift">Card 3</div>
 </div>
 
-// Button with press effect
-<button className="btn-press">Submit</button>
 
-
-##  Screenshots
-
-| Route | Description |
-|-------|-------------|
-| **Home** (`/`)                 | Hero section with feature cards and CTA |
-| **Dashboard** (`/dashboard`)  | Stats cards + recent activity feed |
-| **Login** (`/login`)           | Clean centered auth form |
-| **Signup** (`/signup`)          | Registration form with validation |
-
-
-## 🛠️ Available Scripts
+##  Available Scripts
 
 ```bash
 npm run dev      # Start development server
@@ -97,8 +71,23 @@ npm run lint     # Run ESLint
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-##  License
+# React Router Assignment
 
-This project is licensed under the [MIT License](LICENSE).
+This project is made using React and React Router.
 
-print("README.md saved successfully!")
+Pages:
+- Home
+- Login
+- Signup
+- Dashboard
+
+How to run
+
+1. npm install
+2. npm run dev
+
+Technologies Used
+
+- React
+- React Router DOM
+- Vite

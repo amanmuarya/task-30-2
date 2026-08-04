@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Map, Link2, Layers } from 'lucide-react';
-
 function Home() {
     const features = [
         {
@@ -22,7 +21,6 @@ function Home() {
             color: 'bg-violet-50 text-violet-600',
         },
     ];
-
     return (
         <div className="animate-fade-in">
             <div className="text-center py-16">
@@ -35,30 +33,28 @@ function Home() {
                 </p>
                 <Link
                     to="/dashboard"
-                    className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-800 transition-colors"
+                    className="inline-flex items-center "
                 >
                     Go to Dashboard →
                 </Link>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {features.map((f, i) => (
                     <div
                         key={i}
-                        className="border border-gray-200 rounded-2xl p-6 bg-white hover:shadow-md transition-shadow"
+                        className="border "
                     >
                         <div
-                            className={`w-10 h-10 rounded-lg flex items-center justify-center mb-4 ${f.color}`}
+                            className={`w-10 h-10  ${f.color}`}
                         >
                             {f.icon}
                         </div>
-                        <h3 className="font-semibold text-gray-900 mb-1">{f.title}</h3>
-                        <p className="text-sm text-gray-500 leading-relaxed">{f.desc}</p>
+                        <h3 className="font-semibold">{f.title}</h3>
+                        <p className="text-sm ">{f.desc}</p>
                     </div>
                 ))}
             </div>
         </div>
     );
 }
-
 export default Home;

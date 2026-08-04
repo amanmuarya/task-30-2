@@ -9,22 +9,22 @@ function Navbar() {
         }`;
 
     return (
-        <nav className="sticky top-0 z-50 bg-gray-100/80 backdrop-blur-md border-b border-gray-200">
+        <nav className=" gap-2">
             <div className="max-w-4xl mx-auto px-4 py-3">
                 <div className="flex items-center justify-between">
                     <span className="text-lg font-bold tracking-tight">RouteFlow</span>
-                    <div className="flex items-center gap-1 p-1 bg-gray-200/60 rounded-2xl">
+                    <div className="flex items-center  rounded-2xl">
                         <NavLink to="/" className={linkClass}>
-                            <Home size={16} /> Home
+                            <Home size={16} gap={2} /> Home
                         </NavLink>
                         <NavLink to="/dashboard" className={linkClass}>
-                            <LayoutDashboard size={16} /> Dashboard
+                            <LayoutDashboard size={16} gap={2} /> Dashboard
                         </NavLink>
                         <NavLink to="/login" className={linkClass}>
-                            <LogIn size={16} /> Login
+                            <LogIn size={16} gap={2} /> Login
                         </NavLink>
                         <NavLink to="/signup" className={linkClass}>
-                            <UserPlus size={16} /> Signup
+             <UserPlus size={16} gap={2} /> Signup
                         </NavLink>
                     </div>
                 </div>
@@ -32,5 +32,4 @@ function Navbar() {
         </nav>
     );
 }
-
 export default Navbar;

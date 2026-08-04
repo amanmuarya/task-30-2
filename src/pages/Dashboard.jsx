@@ -6,7 +6,6 @@ function Dashboard() {
         { label: 'Uptime', value: '99.2%', icon: <TrendingUp size={18} /> },
         { label: 'Revenue', value: '$4.2k', icon: <DollarSign size={18} /> },
     ];
-
     const activities = [
         { text: 'New user registration from Mumbai', time: '2 min ago', color: 'bg-blue-500' },
         { text: 'Payment processed successfully', time: '15 min ago', color: 'bg-emerald-500' },
@@ -17,8 +16,8 @@ function Dashboard() {
     return (
         <div className="animate-fade-in space-y-6">
             <div>
-                <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
-                <p className="text-gray-500 text-sm mt-1">Overview of your application metrics</p>
+                <h2 className="">Dashboard</h2>
+                <p className="">Overview of your application metrics</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -37,7 +36,6 @@ function Dashboard() {
                     </div>
                 ))}
             </div>
-
             <div className="bg-white border border-gray-200 rounded-2xl p-6">
                 <h3 className="font-semibold text-gray-900 mb-4">Recent Activity</h3>
                 <div className="space-y-0">
